@@ -1,5 +1,14 @@
-# Script Created by Declan T
-# The purpose of this script is to obtain all iSCSI connections and obtain the Disk, Drive Letter and TargetNodeAddress
+<#
+.Synopsis
+Get iSCSI targets and their associated drive letter
+
+.Description
+Match driver letter with TargetNodeAddress
+
+.Notes
+Author:     Declan Turley   
+Version:    1.0
+#>
 
 #Run this script as administrator (Must be local admin)
 if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")) { Start-Process powershell.exe "-NoProfile -ExecutionPolicy Bypass -File `"$PSCommandPath`"" -Verb RunAs; exit }
