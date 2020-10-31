@@ -1,4 +1,15 @@
-# Script Created by Declan T.
+<#
+.Synopsis
+Get basic information of your PC. 
+
+.Description
+Get make, model, processor, domain, BIOS, NIC and other info. 
+
+.Notes
+Author:     Declan Turley   
+Version:    1.0
+
+#>
 
 #This will create the function "Menu" which will allow user see an interactive menu.
 Function Menu 
