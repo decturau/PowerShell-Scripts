@@ -1,5 +1,15 @@
-# Script Created by Declan T
-# The purpose of this script is to obtain all encrypted volumes with bitlocker and show their recovery keys. Valid in Windows 10. 
+<#
+.Synopsis
+Obtain Bitlocker recovery keys
+
+.Description
+Obtain all encrypted volumes with bitlocker and show their recovery keys. Valid in Windows 10.
+
+.Notes
+Author:     Declan Turley   
+Version:    1.0
+
+#>
 
 $EncryptedVolumes = Get-BitLockerVolume | select -ExpandProperty MountPoint
 $Hostname= hostname
